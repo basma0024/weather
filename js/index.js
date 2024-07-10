@@ -77,7 +77,21 @@ function displaynextData(data){
 }
 
 
-// run functions
+// async function runFun(city) {
+//     if (!city) {
+//         city = await getUserLocation();
+//     }
+    
+//     let weatherData = await getWeather(city);
+
+//     if (!weatherData.error) {
+//         displayTodayData(weatherData);
+//         displayNextData(weatherData);
+//     }
+// }
+
+
+// // run functions
 async function runFun(city="alexandria"){
     let weatherData = await getWeather(city);
 // console.log(weatherData)
